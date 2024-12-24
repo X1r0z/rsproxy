@@ -71,7 +71,7 @@ pub enum Commands {
 
         /// Fallback IP address, format: IP:PORT
         #[arg(short, long)]
-        fallback: String,
+        fallback: Option<String>,  // Make fallback optional
 
         /// External IP address, format: IP
         #[arg(short, long)]
